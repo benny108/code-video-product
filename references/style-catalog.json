@@ -1,0 +1,810 @@
+{
+  "schema_version": 1,
+  "catalog_basis": "38-item local Code Video gallery; numbers are this gallery mapping, not universal upstream identifiers",
+  "upstream_repository": "https://github.com/Changroro/code-video",
+  "observed_reference_commit": "03da4e3ab149c4134a9a72eec499e1a2a41601ea",
+  "styles": [
+    {
+      "number": "01",
+      "slug": "handdrawn",
+      "name": "手绘小剧场",
+      "guide": "handdrawn.md",
+      "preset": null,
+      "aliases": [
+        "手绘",
+        "手绘小剧场"
+      ],
+      "guide_sha256_at_creation": "0c5209a31b58eea7272b2dbb21bb6a647c074b1782c2e6ebb06f25a55a1d6fdb",
+      "guide_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/references/styles/handdrawn.md",
+      "preview_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/docs/gallery/handdrawn.gif",
+      "production_guide": "styles/handdrawn.md",
+      "features": "暖白纸面、细墨线道具与迷你像素角色混搭；用角色和物件的实际互动讲事情。",
+      "suitable_scenarios": [
+        "生活矛盾小故事",
+        "客户沟通与商业科普",
+        "轻松的教育情境"
+      ],
+      "example_topic": "早餐店老板为什么不买你的宣传片：先发现他真正缺什么。",
+      "selection_boundary": "需要具体人物、道具与事件；密集规格表或严肃证据审查不是它的强项。"
+    },
+    {
+      "number": "02",
+      "slug": "detective",
+      "name": "侦探证据板",
+      "guide": "detective.md",
+      "preset": null,
+      "aliases": [
+        "侦探",
+        "证据板"
+      ],
+      "guide_sha256_at_creation": "e7b1ef2772f3848dabd1adc14c2138da3cb9f68e1d90421ec6fdace7846863aa",
+      "guide_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/references/styles/detective.md",
+      "preview_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/docs/gallery/detective.gif",
+      "production_guide": "styles/detective.md",
+      "features": "软木证据板、倾斜纸卡和红线关系网；巡查线索、拉远归纳，最后揭晓。",
+      "suitable_scenarios": [
+        "原因排查与案例复盘",
+        "信息核验与反骗局科普",
+        "逐条证据支撑的商业分析"
+      ],
+      "example_topic": "报价发出后客户消失了：从三条反馈排查真正原因。",
+      "selection_boundary": "结论须由证据支撑；只有主张没有线索时，不要靠红线和印章制造已证实的感觉。"
+    },
+    {
+      "number": "03",
+      "slug": "rpg",
+      "name": "像素 RPG 闯关",
+      "guide": "rpg.md",
+      "preset": null,
+      "aliases": [
+        "RPG",
+        "像素RPG"
+      ],
+      "guide_sha256_at_creation": "57d3a6b97ade60056cd0d8ce7ed706b3c3cbc0b2c6c5bbac9a3143d2436e763e",
+      "guide_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/references/styles/rpg.md",
+      "preview_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/docs/gallery/rpg.gif",
+      "production_guide": "styles/rpg.md",
+      "features": "低分辨率游戏场景、装备角色、任务与对话面板；战斗反馈、经验和升级串成成长线。",
+      "suitable_scenarios": [
+        "技能成长与阶段挑战",
+        "带障碍和奖励的学习故事",
+        "个人能力与资源取舍"
+      ],
+      "example_topic": "剪辑高手第一次接单：技术能力之外，还得解锁需求沟通。",
+      "selection_boundary": "适合有角色成长和障碍的内容；不要把严肃损失或医疗效果简化成必然通关。"
+    },
+    {
+      "number": "04",
+      "slug": "whiteboard",
+      "name": "白板手绘课",
+      "guide": "whiteboard.md",
+      "preset": null,
+      "aliases": [
+        "白板"
+      ],
+      "guide_sha256_at_creation": "26673504cbd3922e3fbdc2ffaecfcf418787746075b8bc9b5a928512ec51a644",
+      "guide_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/references/styles/whiteboard.md",
+      "preview_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/docs/gallery/whiteboard.gif",
+      "production_guide": "styles/whiteboard.md",
+      "features": "实体白板、手与笔的顺序书写、擦除和浅残影；图文随推理逐步建立。",
+      "suitable_scenarios": [
+        "概念区别与知识教学",
+        "流程拆解",
+        "少量公式和因果关系解释"
+      ],
+      "example_topic": "一单收了1000元，为什么不等于赚了1000元？逐项画出成本。",
+      "selection_boundary": "适合边画边想，不适合追求强戏剧人物表演；内容过多应分步擦写，不堆满整板。"
+    },
+    {
+      "number": "05",
+      "slug": "comic",
+      "name": "英雄漫画",
+      "guide": "comic.md",
+      "preset": null,
+      "aliases": [],
+      "guide_sha256_at_creation": "1d07a6e656089ff3f77dbf8f9727da146f98992ee7d7ea3e04832ee0ec83f2fa",
+      "guide_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/references/styles/comic.md",
+      "preview_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/docs/gallery/comic.gif",
+      "production_guide": "styles/comic.md",
+      "features": "粗黑斜分格、网点纸、夸张姿态、气泡与拟声爆破；动作冲突带动镜头。",
+      "suitable_scenarios": [
+        "强冲突故事",
+        "夸张喜剧与观点反转",
+        "强调行动的短宣传"
+      ],
+      "example_topic": "客户的‘再改最后一次’变成改稿怪兽，主角拿交付范围挡住它。",
+      "selection_boundary": "适合冲突和动作，不适合细密的证据阅读；与实体翻页漫画不同，不强套双页书。"
+    },
+    {
+      "number": "06",
+      "slug": "motion",
+      "name": "简洁品牌动效",
+      "guide": "motion.md",
+      "preset": null,
+      "aliases": [],
+      "guide_sha256_at_creation": "ee4759239e9dfc1a4acd23846f0c66784be81ae2efe3d2b6cdb673fe42f63956",
+      "guide_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/references/styles/motion.md",
+      "preview_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/docs/gallery/motion.gif",
+      "production_guide": "styles/motion.md",
+      "features": "深色舞台、细白线物件、粗几何字与单主强调色；痛点到产品响应的简洁动效。",
+      "suitable_scenarios": [
+        "产品价值说明",
+        "一项功能的前后对比",
+        "服务痛点与解决机制展示"
+      ],
+      "example_topic": "每次交片都找不到文件：展示统一版本管理怎样减少重复沟通。",
+      "selection_boundary": "原指南是静音方向；新增配音属于本次适配。它不是复杂软件的逐步操作录屏。"
+    },
+    {
+      "number": "07",
+      "slug": "uimorph",
+      "name": "界面连续变形",
+      "guide": "uimorph.md",
+      "preset": null,
+      "aliases": [],
+      "guide_sha256_at_creation": "786345a56a0d37cb263b6d9a480ff8272c106c3266307b7f93fa3de16cadeca7",
+      "guide_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/references/styles/uimorph.md",
+      "preview_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/docs/gallery/uimorph.gif",
+      "production_guide": "styles/uimorph.md",
+      "features": "同一个界面元素连续变形；光标交互触发状态变化，首尾可无缝闭合。",
+      "suitable_scenarios": [
+        "单一交互流程",
+        "界面微动效",
+        "产品功能循环演示"
+      ],
+      "example_topic": "报价工具由输入工时变成计算、确认和发送状态。",
+      "selection_boundary": "适合连续状态，不适合跨时空故事或长篇解释；整页切换不应冒充元素变形。"
+    },
+    {
+      "number": "08",
+      "slug": "thermal",
+      "name": "热敏小票",
+      "guide": "thermal.md",
+      "preset": null,
+      "aliases": [],
+      "guide_sha256_at_creation": "c74a924ae3b2696b2407e8f6c48c7fb4e8ced04595c6969faf8b0f7d4aebed69",
+      "guide_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/references/styles/thermal.md",
+      "preview_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/docs/gallery/thermal.gif",
+      "production_guide": "styles/thermal.md",
+      "features": "热敏打印机逐行出纸，带锯齿、条码、总额、红章与撕纸动作；信息像真实小票。",
+      "suitable_scenarios": [
+        "账单和成本拆解",
+        "订单与消费复盘",
+        "项目清单或结算摘要"
+      ],
+      "example_topic": "打印一张接单小票：收入减去工时、素材和修改成本，还剩多少？",
+      "selection_boundary": "强项是短清单和汇总，不适合复杂网络关系；示例金额与模拟票据须明确标注。"
+    },
+    {
+      "number": "09",
+      "slug": "trailer",
+      "name": "电影预告",
+      "guide": "trailer.md",
+      "preset": null,
+      "aliases": [],
+      "guide_sha256_at_creation": "9b051019606689ebc36798492e35e8746d599a0ec666cbe991dc758bbe0c60b9",
+      "guide_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/references/styles/trailer.md",
+      "preview_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/docs/gallery/trailer.gif",
+      "production_guide": "styles/trailer.md",
+      "features": "宽银幕黑边、暖黑与金铜色、居中衬线大字；慢揭晓、光扫与留白呼吸。",
+      "suitable_scenarios": [
+        "系列或课程预告",
+        "作品主题揭晓",
+        "重要里程碑与成果展示"
+      ],
+      "example_topic": "用预告片介绍‘从会做视频到拿到第一单’这条学习旅程。",
+      "selection_boundary": "适合建立期待和突出少量重点；不是快剪动作片，也不适合一屏塞进完整教学。"
+    },
+    {
+      "number": "10",
+      "slug": "blueprint",
+      "name": "工程蓝图",
+      "guide": "blueprint.md",
+      "preset": null,
+      "aliases": [],
+      "guide_sha256_at_creation": "9cb69998502065977ddadab2f1ec9102212f8e977b4abb12b89791b5baafdd3b",
+      "guide_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/references/styles/blueprint.md",
+      "preview_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/docs/gallery/blueprint.gif",
+      "production_guide": "styles/blueprint.md",
+      "features": "蓝晒底、白色工程线、施工线、尺寸与编号；逐线构建结构和对象关系。",
+      "suitable_scenarios": [
+        "系统架构与技术原理",
+        "产品结构拆解",
+        "生产流程和依赖关系"
+      ],
+      "example_topic": "把一次视频交付画成蓝图：需求、脚本、制作、验收如何连接。",
+      "selection_boundary": "适合结构和约束，不适合情绪人物戏；编号、尺寸和连线要解释真实关系，不作装饰。"
+    },
+    {
+      "number": "11",
+      "slug": "arcade",
+      "name": "16-bit 街机",
+      "guide": "arcade.md",
+      "preset": null,
+      "aliases": [],
+      "guide_sha256_at_creation": "e83861280c0ef00b6c19bec1c02f98e25721811b16bce9e6d0910ae752ca5b7b",
+      "guide_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/references/styles/arcade.md",
+      "preview_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/docs/gallery/arcade.gif",
+      "production_guide": "styles/arcade.md",
+      "features": "16-bit街机开场、投币与选关地图、逐站跳跃、高分和通关；强调短挑战节奏。",
+      "suitable_scenarios": [
+        "阶段任务与学习打卡",
+        "多步挑战",
+        "步骤达成与成果计分"
+      ],
+      "example_topic": "接单前的三道关：找到客户、确认问题、交出一份小样。",
+      "selection_boundary": "适合短任务进程，区别于RPG角色养成；积分是教学反馈，不是保证收入或真实排名。"
+    },
+    {
+      "number": "12",
+      "slug": "manual",
+      "name": "装配说明书",
+      "guide": "manual.md",
+      "preset": null,
+      "aliases": [
+        "说明书"
+      ],
+      "guide_sha256_at_creation": "fbebc066b6123f8fec105605f23fd7234dbc3ecd9cde2e8bbe3873c662af01da",
+      "guide_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/references/styles/manual.md",
+      "preview_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/docs/gallery/manual.gif",
+      "production_guide": "styles/manual.md",
+      "features": "奶油纸装配手册、粗线、小人物和大步骤号；实体部件与移除量解释机制。",
+      "suitable_scenarios": [
+        "操作步骤与方法教程",
+        "规则和交付流程",
+        "部件、成本或流程的前后对照"
+      ],
+      "example_topic": "像装配一件产品那样，依次组好视频服务的范围、修改次数和验收标准。",
+      "selection_boundary": "适合可执行、可拆分的步骤，不适合证据不明的观点；实体隐喻不能取代真实操作依据。"
+    },
+    {
+      "number": "13",
+      "slug": "comicbook",
+      "name": "翻页漫画",
+      "guide": "comicbook.md",
+      "preset": null,
+      "aliases": [
+        "翻页漫画"
+      ],
+      "guide_sha256_at_creation": "f5099238945496b24b1493a0c6208916045ebd7c774c0ff50f2fb84fc0a25413",
+      "guide_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/references/styles/comicbook.md",
+      "preview_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/docs/gallery/comicbook.gif",
+      "production_guide": "styles/comicbook.md",
+      "features": "实体旧漫画封面、书脊与双页分格；镜头阅读画格，卷页推进章节。",
+      "suitable_scenarios": [
+        "连续剧情与角色经历",
+        "分章节案例故事",
+        "需要前后照应的叙事"
+      ],
+      "example_topic": "翻开一位创作者的第一单：从自信报价到发现客户理解错了交付。",
+      "selection_boundary": "强项是读故事与翻页节奏，不是每格都猛烈战斗；与英雄漫画的斜格动作语言区分。"
+    },
+    {
+      "number": "14",
+      "slug": "museum",
+      "name": "博物馆展览",
+      "guide": "museum.md",
+      "preset": null,
+      "aliases": [
+        "博物馆"
+      ],
+      "guide_sha256_at_creation": "cc558ddbf0c2235dd6fd4d400de7fe63ab66a2ce3efaa2843567f9750a9718e1",
+      "guide_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/references/styles/museum.md",
+      "preview_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/docs/gallery/museum.gif",
+      "production_guide": "styles/museum.md",
+      "features": "夜间展厅、搜索式暖吊灯、低多边形展品与展签；访客在不同房间间移动。",
+      "suitable_scenarios": [
+        "有代表物件的概念讲解",
+        "成果或作品策展",
+        "历史物件与价值来源"
+      ],
+      "example_topic": "参观信任展厅：样片、履约记录和客户评价各自证明什么。",
+      "selection_boundary": "适合少量重要展品的慢观看；密集并行数据或强促销快节奏会破坏导览体验。"
+    },
+    {
+      "number": "15",
+      "slug": "storybook",
+      "name": "绘本故事",
+      "guide": "storybook.md",
+      "preset": null,
+      "aliases": [
+        "绘本"
+      ],
+      "guide_sha256_at_creation": "6d8c2ef662c2a26debf0678bb3897e5c74706bfa3c39049192af6626a61183b1",
+      "guide_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/references/styles/storybook.md",
+      "preview_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/docs/gallery/storybook.gif",
+      "production_guide": "styles/storybook.md",
+      "features": "木桌上的皮面绘本，圆窗插画、柔和角色与衬线叙述；物理翻页和温柔节奏。",
+      "suitable_scenarios": [
+        "儿童与亲子故事",
+        "温和的情绪和成长叙事",
+        "低压力的教育启蒙"
+      ],
+      "example_topic": "小熊发了报价却没收到回复，它先问清情况，而不是立刻责怪自己。",
+      "selection_boundary": "适合陪伴感和易理解故事；不宜承载复杂财务表或用可爱包装宣称医疗疗效。"
+    },
+    {
+      "number": "16",
+      "slug": "sports",
+      "name": "体育转播",
+      "guide": "sports.md",
+      "preset": null,
+      "aliases": [
+        "体育"
+      ],
+      "guide_sha256_at_creation": "cff301e80bad4a964495bf2a6c2f05bb20ba903d8aead147e3a13ddb2235a7c5",
+      "guide_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/references/styles/sports.md",
+      "preview_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/docs/gallery/sports.gif",
+      "production_guide": "styles/sports.md",
+      "features": "球场、常驻比分与LIVE角标、双方配色、跑道回放和MVP；对比像一场比赛。",
+      "suitable_scenarios": [
+        "明确指标的方案对比",
+        "A/B实验结果",
+        "团队挑战与阶段成绩"
+      ],
+      "example_topic": "按工时报价和按交付包报价对阵：用示例比较返工时间和结余。",
+      "selection_boundary": "必须先定义胜负指标，成本和耗时通常越低越好；模拟比赛不等于真实统计排名。"
+    },
+    {
+      "number": "17",
+      "slug": "particles",
+      "name": "粒子动效",
+      "guide": "particles.md",
+      "preset": null,
+      "aliases": [],
+      "guide_sha256_at_creation": "fac9d985a5779d608e5e21c4d273dd7bb9f5ebfa49bbd95d0f8820d41ae06977",
+      "guide_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/references/styles/particles.md",
+      "preview_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/docs/gallery/particles.gif",
+      "production_guide": "styles/particles.md",
+      "features": "发光粒子从流动中聚成字、数或图标，再变形或散开；形状由粒子真正构成。",
+      "suitable_scenarios": [
+        "片头与品牌揭晓",
+        "少量关键数字",
+        "汇聚、分散或形成的抽象概念"
+      ],
+      "example_topic": "零散能力粒子汇成一个清楚的服务名称，作为产品化章节的开场。",
+      "selection_boundary": "适合作为视觉重点或过场；长正文、复杂推导和密集中文都不是它的强项。"
+    },
+    {
+      "number": "18",
+      "slug": "splitflap",
+      "name": "机械翻牌",
+      "guide": "splitflap.md",
+      "preset": null,
+      "aliases": [],
+      "guide_sha256_at_creation": "45d24fee9bfffccd5cf869604d726e45056421d71883b672fd3b743b4d2fd9ba",
+      "guide_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/references/styles/splitflap.md",
+      "preview_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/docs/gallery/splitflap.gif",
+      "production_guide": "styles/splitflap.md",
+      "features": "铁路机械看板，上下字片沿铰链逐列翻动，配合时钟、状态灯与机械声。",
+      "suitable_scenarios": [
+        "排期与进度公告",
+        "状态更新与结果揭晓",
+        "短列表和时间表"
+      ],
+      "example_topic": "接单排期看板依次翻出：待确认、制作中、待验收、已交付。",
+      "selection_boundary": "适合短字段而非段落；中文须先保证翻牌格字形与宽度，不能靠随机换字代替机械运动。"
+    },
+    {
+      "number": "19",
+      "slug": "brand-samsung",
+      "name": "科技发布会",
+      "guide": "brand.md",
+      "preset": "samsung",
+      "aliases": [
+        "samsung"
+      ],
+      "guide_sha256_at_creation": "613f9abb0f1eda55d7f4a09dfbc1a5a6d37497ab9e851160b04785b1c66cbe75",
+      "guide_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/references/styles/brand.md",
+      "preview_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/docs/gallery/brand-samsung.gif",
+      "production_guide": "styles/brand-samsung.md",
+      "features": "黑色科技揭晓、反射与光扫，转白色规格段；电蓝强调和大参数形成发布会感。",
+      "suitable_scenarios": [
+        "智能设备与硬件发布",
+        "科技工具功能介绍",
+        "有明确规格的产品展示"
+      ],
+      "example_topic": "展示自有录音设备或剪辑工具：逐项说明输入、处理和输出能力。",
+      "selection_boundary": "不等同于满屏赛博霓虹，也不同于Apple柔影展台；风格参考不表示Samsung官方合作。"
+    },
+    {
+      "number": "20",
+      "slug": "designmd-stripe",
+      "name": "设计文档驱动",
+      "guide": "brand.md",
+      "preset": null,
+      "aliases": [
+        "stripe"
+      ],
+      "guide_sha256_at_creation": "613f9abb0f1eda55d7f4a09dfbc1a5a6d37497ab9e851160b04785b1c66cbe75",
+      "guide_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/references/styles/brand.md",
+      "preview_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/docs/gallery/designmd-stripe.gif",
+      "production_guide": "styles/designmd-stripe.md",
+      "features": "按实际设计文档构建页面系统；画廊例为斜切渐变、左标题与右侧浏览器预览。",
+      "suitable_scenarios": [
+        "SaaS和网页产品发布",
+        "有设计系统的品牌说明",
+        "支付或开发者工具演示"
+      ],
+      "example_topic": "依据自己报价网站的DESIGN.md，演示客户填写需求到得到方案。",
+      "selection_boundary": "不是固定Stripe预设；缺设计文档或可核验页面时不能声称精准还原，也不能混用其他品牌tokens。"
+    },
+    {
+      "number": "21",
+      "slug": "news",
+      "name": "新闻播报",
+      "guide": "news.md",
+      "preset": null,
+      "aliases": [
+        "新闻"
+      ],
+      "guide_sha256_at_creation": "d27b89f36722123b6f98aa96b7acf3d15ca6ec4776ea9de5898d49bc24d36ef8",
+      "guide_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/references/styles/news.md",
+      "preview_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/docs/gallery/news.gif",
+      "production_guide": "styles/news.md",
+      "features": "深蓝播报台、雷达地球、逐级地图与数据卡；频道标、时钟和新闻下栏常驻。",
+      "suitable_scenarios": [
+        "已核验资讯摘要",
+        "事件与数据快报",
+        "栏目式科普播报"
+      ],
+      "example_topic": "客户采访简报：分别呈现三家店提出的需求，再给出采访范围。",
+      "selection_boundary": "事实、日期与数据须另核验；模拟频道和动画主持不能冒充真实电视报道或独立权威背书。"
+    },
+    {
+      "number": "22",
+      "slug": "scrapbook",
+      "name": "剪贴簿",
+      "guide": "scrapbook.md",
+      "preset": null,
+      "aliases": [],
+      "guide_sha256_at_creation": "7127b0bc9bd4c095e0ed9c072079e7daa9dc862719f9ccf2edfbd2611ffcf824",
+      "guide_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/references/styles/scrapbook.md",
+      "preview_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/docs/gallery/scrapbook.gif",
+      "production_guide": "styles/scrapbook.md",
+      "features": "牛皮纸手账、真实照片拍立得、胶带与手写笔注；制作痕迹和里程碑形成记录感。",
+      "suitable_scenarios": [
+        "项目制作过程",
+        "旅行与生活回顾",
+        "团队复盘和成长记录"
+      ],
+      "example_topic": "用授权照片、需求便笺和样片截图，记录第一次到店找客户的经过。",
+      "selection_boundary": "需要真实或明确标注的记录素材；空卡倾斜摆放不够，不宜用来展示精密公式。"
+    },
+    {
+      "number": "23",
+      "slug": "collage",
+      "name": "撕纸拼贴",
+      "guide": "collage.md",
+      "preset": null,
+      "aliases": [],
+      "guide_sha256_at_creation": "654e0ddeaa157866254cee9e8facf21a494f4703fb67d7631233a3373bbea9c3",
+      "guide_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/references/styles/collage.md",
+      "preview_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/docs/gallery/collage.gif",
+      "production_guide": "styles/collage.md",
+      "features": "撕纸纤维边、水彩纹理和柔影；纸片逐块拼成景物，画面具有手作层次。",
+      "suitable_scenarios": [
+        "自然与环保叙事",
+        "城市文化和活动介绍",
+        "可用象征景物表达的故事"
+      ],
+      "example_topic": "街区纸片拼成小店生态：顾客、店员、商品和服务相互连接。",
+      "selection_boundary": "不是拍立得记录式剪贴簿；复杂界面和密集参数不宜全部纸片化。"
+    },
+    {
+      "number": "24",
+      "slug": "sand",
+      "name": "沙画",
+      "guide": "sand.md",
+      "preset": null,
+      "aliases": [],
+      "guide_sha256_at_creation": "0daf0bcfc2480feb4b82688b09350195b1c758fc663c62756aab64fa75923306",
+      "guide_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/references/styles/sand.md",
+      "preview_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/docs/gallery/sand.gif",
+      "production_guide": "styles/sand.md",
+      "features": "暖光台上的深褐沙剪影，颗粒吹散后重新成形；用形态变迁串联时间。",
+      "suitable_scenarios": [
+        "年代与城市变迁",
+        "人物成长和情感故事",
+        "历史概念的演化"
+      ],
+      "example_topic": "从口头约定到写下服务合同，用沙画展示一段合作关系的变化。",
+      "selection_boundary": "适合时间推进和情绪，不适合逐字操作教学；历史内容仍须有来源，沙画并不替代考证。"
+    },
+    {
+      "number": "25",
+      "slug": "neon",
+      "name": "霓虹招牌",
+      "guide": "neon.md",
+      "preset": null,
+      "aliases": [],
+      "guide_sha256_at_creation": "dc079a1c7463d5efe2de5433bbdf43d265d2baeb789f4f4c583c5649c4c2cf23",
+      "guide_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/references/styles/neon.md",
+      "preview_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/docs/gallery/neon.gif",
+      "production_guide": "styles/neon.md",
+      "features": "暗砖墙、实体发光灯管、通电闪亮与湿地反射；短字和图标像夜间招牌。",
+      "suitable_scenarios": [
+        "夜间活动和演出开场",
+        "店铺短招牌",
+        "章节标题与短口号"
+      ],
+      "example_topic": "用一句‘先谈范围，再谈价格’点亮谈判章节的开场。",
+      "selection_boundary": "适合少字的强调，不适合长篇旁白文字；持续闪烁会削弱阅读，应留稳定亮灯阶段。"
+    },
+    {
+      "number": "26",
+      "slug": "brand-spotify",
+      "name": "暗色媒体",
+      "guide": "brand.md",
+      "preset": "spotify",
+      "aliases": [
+        "spotify"
+      ],
+      "guide_sha256_at_creation": "613f9abb0f1eda55d7f4a09dfbc1a5a6d37497ab9e851160b04785b1c66cbe75",
+      "guide_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/references/styles/brand.md",
+      "preview_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/docs/gallery/brand-spotify.gif",
+      "production_guide": "styles/brand-spotify.md",
+      "features": "炭黑内容库、多彩封面和卡点轮播；紧字距标题与绿色主操作区分内容和动作。",
+      "suitable_scenarios": [
+        "播客与课程库",
+        "节目推荐和内容策展",
+        "媒体产品展示"
+      ],
+      "example_topic": "把自有案例课按找客户、定价、交付三个主题策展成可浏览的内容库。",
+      "selection_boundary": "需要封面与内容系统，不是黑底绿字；参考风格不表示Spotify发布，也不包含音乐授权。"
+    },
+    {
+      "number": "27",
+      "slug": "infomercial",
+      "name": "电视购物风",
+      "guide": "infomercial.md",
+      "preset": null,
+      "aliases": [],
+      "guide_sha256_at_creation": "7ba1d9967f615ef2b91eab13b12632cb62b0a6c823efb805481d06a4262299fb",
+      "guide_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/references/styles/infomercial.md",
+      "preview_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/docs/gallery/infomercial.gif",
+      "production_guide": "styles/infomercial.md",
+      "features": "饱和放射背景、夸张喊字与前后对比；价格、电话、购物台角标推动喜剧节奏。",
+      "suitable_scenarios": [
+        "复古广告戏仿",
+        "消费心理与促销机制科普",
+        "夸张的产品创意介绍"
+      ],
+      "example_topic": "一件东西从标价到‘限时优惠’，演示价格锚点如何影响观感。",
+      "selection_boundary": "不适合沉稳证据叙事；示例价格、折扣、倒计时不能伪装成真实优惠或真实稀缺。"
+    },
+    {
+      "number": "28",
+      "slug": "terminal",
+      "name": "CRT 终端",
+      "guide": "terminal.md",
+      "preset": null,
+      "aliases": [],
+      "guide_sha256_at_creation": "072556e6b0a1848c7770aa2417c00e2e8272c6904cb6ecb4ac53a6b20b330203",
+      "guide_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/references/styles/terminal.md",
+      "preview_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/docs/gallery/terminal.gif",
+      "production_guide": "styles/terminal.md",
+      "features": "绿色磷光CRT、命令输入、日志滚动、进度与块字标题；执行顺序决定节奏。",
+      "suitable_scenarios": [
+        "开发者工具介绍",
+        "自动化流程说明",
+        "编程和复古计算机科普"
+      ],
+      "example_topic": "展示视频批处理队列：逐项校验素材，再渲染、导出并检查结果。",
+      "selection_boundary": "真实运行与模拟日志要区分；显示OK或100%不等于实际工具已经验证通过。"
+    },
+    {
+      "number": "29",
+      "slug": "brand-ferrari",
+      "name": "竞速奢华",
+      "guide": "brand.md",
+      "preset": "ferrari",
+      "aliases": [
+        "ferrari"
+      ],
+      "guide_sha256_at_creation": "613f9abb0f1eda55d7f4a09dfbc1a5a6d37497ab9e851160b04785b1c66cbe75",
+      "guide_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/references/styles/brand.md",
+      "preview_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/docs/gallery/brand-ferrari.gif",
+      "production_guide": "styles/brand-ferrari.md",
+      "features": "黑白编辑式展示、宽字距大写、方角与克制红线；慢移与驻留突出材料和工艺。",
+      "suitable_scenarios": [
+        "高端机械与汽车展示",
+        "材料工艺说明",
+        "精品设计和定制服务"
+      ],
+      "example_topic": "展示一项精品视频服务的镜头、调色和声音工艺，而不是只宣称高级。",
+      "selection_boundary": "名字带竞速，但本预设不是赛车快剪；不同于Nike冲击节奏，也不表示Ferrari授权。"
+    },
+    {
+      "number": "30",
+      "slug": "brand-nike",
+      "name": "运动力量",
+      "guide": "brand.md",
+      "preset": "nike",
+      "aliases": [
+        "nike"
+      ],
+      "guide_sha256_at_creation": "613f9abb0f1eda55d7f4a09dfbc1a5a6d37497ab9e851160b04785b1c66cbe75",
+      "guide_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/references/styles/brand.md",
+      "preview_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/docs/gallery/brand-nike.gif",
+      "production_guide": "styles/brand-nike.md",
+      "features": "黑白强对比、窄粗巨字冲击、速度痕和节拍硬切；主体动势形成力量感。",
+      "suitable_scenarios": [
+        "训练与行动挑战",
+        "赛事和运动产品宣传",
+        "有实际行动过程的号召"
+      ],
+      "example_topic": "三天做出第一份能展示的样片：拍、剪、测试的动作连成训练节奏。",
+      "selection_boundary": "全屏震动不能代替真实动势；不适合逐项慢算，也不暗示Nike代言或合作。"
+    },
+    {
+      "number": "31",
+      "slug": "mathlecture",
+      "name": "数学推导",
+      "guide": "mathlecture.md",
+      "preset": null,
+      "aliases": [
+        "数学推导"
+      ],
+      "guide_sha256_at_creation": "7b8a51ec92cbdda568daf63aa9c7a7a35ed394f3b44a26f276c769c572a46cd4",
+      "guide_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/references/styles/mathlecture.md",
+      "preview_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/docs/gallery/mathlecture.gif",
+      "production_guide": "styles/mathlecture.md",
+      "features": "近黑讲义、逐项公式、编号推导和坐标图；高亮结果由计算过程自然得到。",
+      "suitable_scenarios": [
+        "数学与算法讲解",
+        "成本、利润和盈亏平衡",
+        "可复算的模型权衡"
+      ],
+      "example_topic": "用自拟成本算清：一个服务包卖多少钱，才能覆盖工时和固定支出？",
+      "selection_boundary": "必须能复算并交代单位、假设；不是给空泛观点加公式，未经证明不能写成定理。"
+    },
+    {
+      "number": "32",
+      "slug": "documentary",
+      "name": "纪录片",
+      "guide": "documentary.md",
+      "preset": null,
+      "aliases": [
+        "纪录片"
+      ],
+      "guide_sha256_at_creation": "e78341353ff7f8bc6bc0089597e67788d59c0985150ad2a8ee44acb76dce5ddf",
+      "guide_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/references/styles/documentary.md",
+      "preview_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/docs/gallery/documentary.gif",
+      "production_guide": "styles/documentary.md",
+      "features": "黑场、档案纸、章节与引用、单重点数据；慢溶解和留白让证据落稳。",
+      "suitable_scenarios": [
+        "历史与社会问题梳理",
+        "商业案例深度复盘",
+        "有来源的研究与调查故事"
+      ],
+      "example_topic": "一家公司订单很多却周转困难：依据公开资料追踪现金流的时间差。",
+      "selection_boundary": "需要可追溯资料，不是新闻快报或营销炒作；示意重建、证词与真实采访须明确区分。"
+    },
+    {
+      "number": "33",
+      "slug": "transit",
+      "name": "地铁路线",
+      "guide": "transit.md",
+      "preset": null,
+      "aliases": [],
+      "guide_sha256_at_creation": "8889a8654fc6554769ef4060bcafddef5611d4af3b3256d2ef22de0162bf4926",
+      "guide_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/references/styles/transit.md",
+      "preview_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/docs/gallery/transit.gif",
+      "production_guide": "styles/transit.md",
+      "features": "彩色地铁线路、站点与换乘，列车沿真实路径逐站前进；空间路径解释步骤关系。",
+      "suitable_scenarios": [
+        "学习与职业路径",
+        "项目里程碑",
+        "客户流程和决策分支"
+      ],
+      "example_topic": "从客户咨询到最终交付：每站标出该确认的事项和可分流的问题。",
+      "selection_boundary": "适合先后与分支，不适合高维网络或密集数值；示意线路不是实际交通地图。"
+    },
+    {
+      "number": "34",
+      "slug": "weather",
+      "name": "天气预报",
+      "guide": "weather.md",
+      "preset": null,
+      "aliases": [
+        "天气"
+      ],
+      "guide_sha256_at_creation": "36898794bfa5ad927c50362b868e425509ee13e1c3fc2284ba51c10a1db7662e",
+      "guide_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/references/styles/weather.md",
+      "preview_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/docs/gallery/weather.gif",
+      "production_guide": "styles/weather.md",
+      "features": "蓝黄天气播报包装、雷达、温度计与风速仪、多日卡；仪表和天气图标共同解释趋势。",
+      "suitable_scenarios": [
+        "气象科普与核验后的预报",
+        "有数据的阶段趋势",
+        "明确标注的经营趋势隐喻"
+      ],
+      "example_topic": "把店铺淡旺季做成经营天气图，标明是假设示例而不是真实预报。",
+      "selection_boundary": "天气隐喻不能冒充真实气象或投资预测；仪表、单位、时间范围和数据来源要一致。"
+    },
+    {
+      "number": "35",
+      "slug": "lyric",
+      "name": "动态歌词",
+      "guide": "lyric.md",
+      "preset": null,
+      "aliases": [],
+      "guide_sha256_at_creation": "712aca43816c30a963c309a2fb8f6d3ed2bcbc83bcfd4168912c8e689f684c29",
+      "guide_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/references/styles/lyric.md",
+      "preview_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/docs/gallery/lyric.gif",
+      "production_guide": "styles/lyric.md",
+      "features": "每句配解释图、关键词按时间表点亮；重复段落复用图形并换强调色。",
+      "suitable_scenarios": [
+        "知识节奏记忆",
+        "原创教育歌词的屏幕可视化",
+        "短概念的重复复习"
+      ],
+      "example_topic": "用原创短句和器乐节奏复习：收入、成本、利润三者怎样对应。",
+      "selection_boundary": "原能力是器乐加屏幕歌词，不自动生成演唱；不同于普通配乐字幕，歌词和音乐需有使用权。"
+    },
+    {
+      "number": "36",
+      "slug": "beat",
+      "name": "节拍同步",
+      "guide": "beat.md",
+      "preset": null,
+      "aliases": [],
+      "guide_sha256_at_creation": "c2c9d0a6d0fe7dd787bd87e9afbbbb4b65d977d4ac4c78d9abb93319d58ced66",
+      "guide_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/references/styles/beat.md",
+      "preview_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/docs/gallery/beat.gif",
+      "production_guide": "styles/beat.md",
+      "features": "真实素材墙、片段筛选、透视轮播和产品界面；动作与切镜跟实际音轨节拍。",
+      "suitable_scenarios": [
+        "创作者作品集",
+        "剪辑与AI视频工具演示",
+        "授权素材精选和产品宣传"
+      ],
+      "example_topic": "用自己的原片与成片片段卡点对照，展示剪辑服务究竟改变了什么。",
+      "selection_boundary": "需要可用素材和音轨，不宜承担长推理；空占位墙不是完成，切镜卡点不同于歌词逐词对齐。"
+    },
+    {
+      "number": "37",
+      "slug": "brand-apple",
+      "name": "极简展台",
+      "guide": "brand.md",
+      "preset": "apple",
+      "aliases": [
+        "apple"
+      ],
+      "guide_sha256_at_creation": "613f9abb0f1eda55d7f4a09dfbc1a5a6d37497ab9e851160b04785b1c66cbe75",
+      "guide_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/references/styles/brand.md",
+      "preview_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/docs/gallery/brand-apple.gif",
+      "production_guide": "styles/brand-apple.md",
+      "features": "白黑极简展台、隔离产品与柔影、渐变名称和圆角功能格；慢而柔的揭晓突出主体。",
+      "suitable_scenarios": [
+        "精品硬件展示",
+        "精致软件功能介绍",
+        "聚焦少数卖点的自有产品发布"
+      ],
+      "example_topic": "把自己的报价工具当作一件产品，先揭晓主体，再演示三个关键功能。",
+      "selection_boundary": "与Samsung反射光扫、Ferrari方角宽字距不同；少字并不等于空白，风格不表示Apple官方关系。"
+    },
+    {
+      "number": "38",
+      "slug": "free",
+      "name": "自由混合风格",
+      "guide": "free.md",
+      "preset": null,
+      "aliases": [],
+      "guide_sha256_at_creation": "5cfbed63c8cb9329a194e58a1d934e1a2055eb9ffbd6f4cb0a3b4c21803f7521",
+      "guide_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/references/styles/free.md",
+      "preview_url": "https://github.com/Changroro/code-video/blob/03da4e3ab149c4134a9a72eec499e1a2a41601ea/docs/gallery/free.gif",
+      "production_guide": "styles/free.md",
+      "features": "先定义本次材质、构图、字体和运动规则的自由设计模式；画廊例是纸面绘图头，并非固定模板。",
+      "suitable_scenarios": [
+        "没有现成预设的新品牌",
+        "用户自带明确参考",
+        "具有统一视觉规则的实验主题"
+      ],
+      "example_topic": "若明确采用画廊绘图头语言，可让笔头逐线画出一张服务现金流示意图。",
+      "selection_boundary": "自由模式与复现画廊原例要先区分；不能任意混搭所有画风、悄悄换主题或降低验收标准。"
+    }
+  ],
+  "usage_note": "Features summarize the pinned reference language. Suitable scenarios and example topics are editorial selection suggestions, not official use cases or authorization to change a reproduction task."
+}

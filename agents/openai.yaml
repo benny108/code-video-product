@@ -1,0 +1,4 @@
+interface:
+  display_name: "Code Video 风格制作"
+  short_description: "按指定画风提取原例核心，制作动态视频并执行分层验收与精准退修"
+  default_prompt: "使用 $code-video-product，按我指定的 Code Video 画风提取核心特征，制作视频并检查还原度。"
